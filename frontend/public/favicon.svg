@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="dieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#141417"/>
+    </linearGradient>
+    <linearGradient id="q0Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="q1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="q2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Chip Carrier (Rounded Dark Microchip) -->
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="url(#bgGrad)" stroke="#3f3f46" stroke-width="1.5"/>
+
+  <!-- Top Hardware Contact Pins -->
+  <line x1="20" y1="1" x2="20" y2="6" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="1" x2="32" y2="6" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="44" y1="1" x2="44" y2="6" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Bottom Hardware Contact Pins -->
+  <line x1="20" y1="58" x2="20" y2="63" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="58" x2="32" y2="63" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="44" y1="58" x2="44" y2="63" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Hardware Contact Pins -->
+  <line x1="1" y1="20" x2="6" y2="20" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1" y1="32" x2="6" y2="32" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1" y1="44" x2="6" y2="44" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Right Hardware Contact Pins -->
+  <line x1="58" y1="20" x2="63" y2="20" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="58" y1="32" x2="63" y2="32" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="58" y1="44" x2="63" y2="44" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Inner Silicon Processor Die -->
+  <rect x="11" y="11" width="42" height="42" rx="8" fill="url(#dieGrad)" stroke="#52525b" stroke-width="1.2"/>
+
+  <!-- Queue 0: Highest Priority Level (Cyan) -->
+  <rect x="16" y="18" width="17" height="5.5" rx="2.5" fill="url(#q0Grad)"/>
+  <rect x="36" y="18" width="11" height="5.5" rx="2.5" fill="url(#q0Grad)" opacity="0.45"/>
+
+  <!-- Queue 1: Medium Priority Level (Violet) -->
+  <rect x="16" y="29.25" width="22" height="5.5" rx="2.5" fill="url(#q1Grad)"/>
+  <rect x="41" y="29.25" width="6" height="5.5" rx="2.5" fill="url(#q1Grad)" opacity="0.45"/>
+
+  <!-- Queue 2: Low Priority / Batch Level (Emerald) -->
+  <rect x="16" y="40.5" width="31" height="5.5" rx="2.5" fill="url(#q2Grad)"/>
+
+  <!-- Vertical Feedback Arrow (MLFQ Dynamic Migration) -->
+  <path d="M49 22 L51.5 25 L46.5 25 Z" fill="#38bdf8"/>
+  <path d="M49 43.5 L51.5 40.5 L46.5 40.5 Z" fill="#34d399"/>
+</svg>
